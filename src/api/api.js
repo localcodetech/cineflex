@@ -154,9 +154,16 @@ export const getBackdropUrl = (path) => {
 
 const urlTV = "https://localcodetech.pythonanywhere.com//api/channels";
 
-export const getTVChannels = async ()=>{
-  const response = await fetch(urlTV).then((res)=>res.json())
 
-  return await response
+export const getTVChannels = async () =>{
 
-}
+  const response = await fetch(urlTV);
+  if (!response.ok){
+    throw new Error (`Request failed with status message ${response.status}`);
+  }
+
+  const data = await response.json()
+  console.log(data.tv)
+  return data.tv;
+};
+
