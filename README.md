@@ -1,16 +1,194 @@
-# React + Vite
+# 🎬 CineFlix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CineFlix is a modern movie discovery web application built with **React**, **Vite**, and **Tailwind CSS**. It allows users to explore trending, popular, top-rated, and now-playing movies using data from **The Movie Database (TMDB)**.
 
-Currently, two official plugins are available:
+> **Note:** CineFlix is a movie discovery application. It does not stream or host movies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🎥 Browse Trending Movies
+- 🔥 View Popular Movies
+- 🍿 Explore Now Playing Movies
+- ⭐ Discover Top Rated Movies
+- 🔍 Search Movies
+- 🎭 Filter Movies by Genre
+- 📅 Filter Movies by Release Year
+- 📊 Sort Movies
+- 📄 View Detailed Movie Information
+- 🎬 Watch Official Movie Trailers
+- 📱 Fully Responsive Design
+- 🌙 Modern Dark User Interface
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- React
+- Vite
+- JavaScript (JSX)
+- Tailwind CSS
+- React Router
+- TMDB API
+- Lucide React
+- Shadcn UI
+
+---
+
+## 📁 Project Structure
+
+```text
+src
+│
+├── api
+│
+├── assets
+│
+├── components
+│   ├── common
+│   ├── elements
+│   ├── landing
+│   └── ui
+│
+├── constants
+│
+├── data
+│
+├── hooks
+│
+├── layout
+│
+├── pages
+│
+├── section
+│
+└── App.jsx
+```
+
+---
+
+## 🚀 Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/localcodetech/cineflex.git
+```
+
+### Navigate into the Project
+
+```bash
+cd cineflix
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start the Development Server
+
+```bash
+npm run dev
+```
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env` file in the project root.
+
+```env
+VITE_TMDB_TOKEN=your_tmdb_api_read_access_token
+```
+
+You can obtain your API token from **The Movie Database (TMDB)**.
+
+---
+
+## 📸 Screens
+
+- Landing Page
+- Home
+- Movies
+- Movie Details
+- About
+- 404 Not Found
+
+---
+
+## 📌 Current Features
+
+- Landing Page
+- Responsive Navigation
+- Movie Search
+- Movie Filtering
+- Movie Categories
+- Movie Details
+- Official Trailer Link
+- Load More Pagination
+- Responsive Layout
+
+---
+
+## 🚧 Planned Features
+
+- Live TV Section
+- Mux Video Player Integration
+- Favorites
+- Recently Viewed Movies
+- Theme Toggle
+- Better Loading Skeletons
+- Improved Animations
+- Infinite Scrolling
+
+---
+
+## 📚 What I Learned
+
+This project helped me improve my understanding of:
+
+- React Components
+- React Hooks
+- Custom Hooks
+- React Router
+- State Management
+- API Integration
+- Reusable Components
+- Responsive Design
+- Tailwind CSS
+- Project Structure
+
+---
+
+## 🙏 Acknowledgements
+
+Movie information is provided by **The Movie Database (TMDB)**.
+
+This product uses the TMDB API but is **not endorsed or certified by TMDB**.
+
+---
+
+## 📄 License
+
+This project is created for learning and portfolio purposes.
+
+---
+
+## 👨‍💻 Author
+
+**Richard Ben Ephraim**
+
+Frontend Developer | Mobile App Developer | Streaming Engineer
+
+GitHub: https://github.com/yourusername
+
+Portfolio: https://yourportfolio.com
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a **⭐ Star** on GitHub.
