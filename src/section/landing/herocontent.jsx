@@ -39,12 +39,14 @@ const HeroContent = () => {
             </Button>
             </Link>
 
+           <Link to={"/tv"}>
             <Button
               variant="outline"
               className="h-12 px-8 text-accent-foreground hover:-translate-y-0.5 duration-1000 transition">
               Live TV
               <ArrowRight className="ml-2 h-4 w-4 hover:-translate-x-0.5 duration-1000 transition" />
             </Button>
+           </Link>
           </div>
 
           <div className="flex flex-wrap gap-6 text-sm text-neutral-400 hover:translate-y-1 duration-1000 transition">
