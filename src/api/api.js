@@ -145,3 +145,18 @@ export const getBackdropUrl = (path) => {
   if (!path) return null;
   return `${IMAGE_BASE_URL}/w1280${path}`;
 };
+
+
+
+
+
+
+
+const urlTV = "https://localcodetech.pythonanywhere.com//api/channels";
+
+export const getTVChannels = async ()=>{
+  const response = await fetch(urlTV).then((res)=>res.json())
+
+  return await response
+
+}
