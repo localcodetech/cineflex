@@ -50,6 +50,16 @@ const MoviesPage = () => {
     ? search.loading
     : browse.isFirstLoad;
 
+
+    console.log({
+  query,
+  isSearching,
+  browseMovies: browse.movies.length,
+  searchMovies: search.results.length,
+  loading: browse.loading,
+});
+
+console.log("Movies to render:", movies);
   return (
     <section className="py-10">
       <MoviesHeader

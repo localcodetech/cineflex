@@ -3,9 +3,9 @@
 export const navigationLinks =[
 
     {label: "home", link: "/home"},
-    {label: "movies", link: "/movie"},
-    {label: "shows", link: "/show"},
-    {label: "series", link: "/serie"},
+    {label: "movies", link: "/movies"},
+    {label: "TV", link: "/tv"},
+    {label: "series", link: "/series"},
     {label: "about", link: "/about"}
 ]
 

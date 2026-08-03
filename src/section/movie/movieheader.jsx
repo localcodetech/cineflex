@@ -10,6 +10,7 @@ const MoviesHeader = ({ query, setQuery, isSearching }) => {
       />
 
       <Input
+      className={"w-full sm:w-64 sm:shrink-0 py-5 px-4"}
         type="text"
         value={query}
         placeholder="Search movies..."

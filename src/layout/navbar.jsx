@@ -7,7 +7,7 @@ import { navLinkStyle } from "@/constants/appvalues";
 
 import useSearchQuery from "@/hooks/usesearchquery";
 
-import { Input } from "@/components/ui/input";
+
 import { Button } from "@/components/ui/button";
 
 import AppNameBrand from "@/components/common/logobrand";
@@ -45,15 +45,7 @@ const NavBar = () => {
 
           {/* Desktop Search & Button */}
           <div className="hidden items-center gap-3 md:flex">
-            <Input
-              value={query}
-              onChange={(e) => {
-                setQuery(e.target.value);
-              }}
-              placeholder="Search..."
-              className="w-56"
-            />
-
+            
             <Button  className={"py-5 px-8 text-xm"} onClick={navigationHandler}>Log out</Button>
           </div>
 

@@ -21,7 +21,9 @@ export const years = Array.from(
 
 
  export const navLinkStyle = ({isActive}) =>{
-        isActive ? "text-white font-bold border-b-2 border-[#e50914] pb-1 capitalize" : "text-neutral-400 hover:text-white transition duration-200"
+        return (
+          isActive ? "text-white font-bold border-b-2  border-[#e50914] pb-1 capitalize " : "text-neutral-400 hover:text-white transition duration-200 "
+        )
     }
 
 
