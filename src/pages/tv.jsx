@@ -18,7 +18,7 @@ const TV = () => {
     <section className="py-10">
       <h1 className="mb-6 text-3xl font-bold">Live TV</h1>
 
-      <div className="grid gap-8 lg:grid-cols-3">
+      <div className="grid gap-8 lg:grid-cols-3 lg:sticky">
         <div className="lg:col-span-2">
           <div className="lg:sticky lg:top-28">
             <VideoPlayer url={selected ? selected.stream_url : null} />
