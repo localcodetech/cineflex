@@ -8,7 +8,7 @@ const MovieCard = ({movie, onCardClick}) =>{ const poster = getPosterUrl(movie.p
     const year =  movie.release_date ? movie.release_date.slice(0,4) : "N/A"
 const rating = movie.vote_average ? movie.vote_average.toFixed(1) : "N/A";
 
-
+console.log(movie.title);
     return (
         <div
         onClick={()=>{
