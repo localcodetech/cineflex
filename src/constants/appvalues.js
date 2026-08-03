@@ -26,4 +26,4 @@ export const years = Array.from(
 
 
 
-export const appNameStyle = "text-2xl font-bold text-[#e50914]"    
+export const appNameStyle = "text-2xl font-bold text-primary hover:translate-y-0.5 duration-1000 transition"    
