@@ -3,14 +3,16 @@ import { formatRuntime } from "@/utils/moviehelpers";
 import MovieGenres from "@/section/moviedetail/moviegenres";
 import MovieCast from "@/section/moviedetail/moviecast";
 import TrailerButton from "@/section/moviedetail/tailerbutton";
+import Paragraph from "@/components/common/Paragraph";
+import Head from "@/components/common/head";
 
 const MovieInfo = ({ movie, year, cast, trailer }) => {
   return (
     <div>
-      <h1 className="text-4xl font-bold">{movie.title}</h1>
+      <Head className="text-4xl font-bold">{movie.title}</Head>
 
       {movie.tagline && (
-        <p className="mt-2 italic text-neutral-400">{movie.tagline}</p>
+        <Paragraph className="mt-2 italic text-neutral-400">{movie.tagline}</Paragraph>
       )}
 
       <div className="mt-4 flex flex-wrap gap-4 text-sm text-neutral-300">
@@ -25,9 +27,9 @@ const MovieInfo = ({ movie, year, cast, trailer }) => {
 
       <MovieGenres genres={movie.genres} />
 
-      <p className="mt-6 leading-relaxed text-neutral-200">
+      <Paragraph className="mt-6 leading-relaxed text-neutral-200">
         {movie.overview || "No overview available."}
-      </p>
+      </Paragraph>
 
       <MovieCast cast={cast} />
 

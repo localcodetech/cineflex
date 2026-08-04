@@ -1,4 +1,5 @@
 import MovieRow from "@/components/elements/movierow";
+import HomeHero from "@/section/home/Homehero";
 
 import {
   getTrending,
@@ -9,6 +10,10 @@ import {
 
 const Home = () => {
   return (
+   <>
+   
+   <HomeHero />
+
     <section className="py-10">
       <MovieRow
         title="Trending This Week"
@@ -30,6 +35,7 @@ const Home = () => {
         fetchFunction={getTopRated}
       />
     </section>
+   </>
   );
 };
 
