@@ -64,8 +64,8 @@ const About = () => {
             />
 
             <Paragraph
-              text=""
-              className="mt-3 text-neutral-400"
+              text={aboutPageDisclaimer}
+              className="mt-3 text-neutral-400 "
             />
           </div>
         </div>
