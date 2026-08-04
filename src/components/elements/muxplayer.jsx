@@ -13,6 +13,7 @@ const VideoPlayer = ({ url }) => {
     <MuxPlayer
       streamType="live"
       src={url}
+      poster=""
       className="mx-auto aspect-video w-full max-w-3xl overflow-hidden rounded-lg"
     />
   );

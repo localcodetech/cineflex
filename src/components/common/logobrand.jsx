@@ -8,7 +8,7 @@ import { NavLink } from "react-router";
 const AppNameBrand = () =>{
 
     return (
-        <NavLink to={"/home"}  className={appNameStyle}>
+        <NavLink to={"/"}  className={appNameStyle}>
             {appName}
         </NavLink>
     )

@@ -12,7 +12,7 @@ const NotFound = () => {
     <section className="flex min-h-[70vh] items-center justify-center">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-8xl font-bold text-primary">404</p>
+          <Paragraph className="text-8xl font-bold text-primary">404</Paragraph>
 
           <Head
             text="Page Not Found"

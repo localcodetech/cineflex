@@ -18,6 +18,8 @@ const useMovies = (fetchFunction, filters = {}) => {
     setPage(1);
   }
 
+  
+
   useEffect(() => {
     const loadMovies = async () => {
       try {
@@ -62,3 +64,5 @@ const useMovies = (fetchFunction, filters = {}) => {
 };
 
 export default useMovies;
+
+

@@ -1,21 +1,21 @@
-import Paragraph from "@/components/common/Paragraph";
+import { Play } from "lucide-react";
 
-const MovieCast = ({ cast }) => {
-  if (!cast || cast.length === 0) {
+const TrailerButton = ({ trailer }) => {
+  if (!trailer) {
     return null;
   }
 
   return (
-    <div className="mt-6">
-      <h2 className="text-sm font-bold uppercase text-neutral-400">
-        Cast
-      </h2>
-
-      <Paragraph className="mt-2 text-sm text-neutral-200">
-        {cast.map((person) => person.name).join(", ")}
-      </Paragraph>
-    </div>
+    <a
+      href={trailer}
+      target="_blank"
+      rel="noreferrer"
+      className="mt-8 inline-flex items-center gap-2 rounded bg-[#e50914] px-6 py-3 font-bold text-white transition hover:bg-[#e50950]"
+    >
+      <Play className="h-4 w-4 fill-current" />
+      Watch Trailer
+    </a>
   );
 };
 
-export default MovieCast;
+export default TrailerButton;

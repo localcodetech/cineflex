@@ -2,6 +2,7 @@ import Container from "@/layout/container";
 
 import Head from "@/components/common/head";
 import Paragraph from "@/components/common/Paragraph";
+import {aboutpageInfo,aboutPageFeatures,aboutPageTechnologies, aboutPageDisclaimer} from "@/constants/appContants"
 
 const About = () => {
   return (
@@ -16,7 +17,9 @@ const About = () => {
             />
 
             <Paragraph
-              text="CineFlix is a modern movie discovery application built with React. It allows users to browse trending movies, search for titles, explore movie details, and watch official trailers using data provided by The Movie Database (TMDB)."
+              text="CineFlix is a modern movie discovery and Live TV Streaming application built with React.
+                CineFlex is an Application built by LocalCode Technology, a subsidiary of RichBen Media Group and a sibling of Local Stream Ghana Ltd
+              CineFlex allows users to browse trending movies, search for titles, explore movie details, and watch official trailers using data provided by The Movie Database (TMDB) and also its a Streaming Site for all Satellite, Internet & Terrestrial Television Stations Configured By Local Stream Ghana Ltd.   "
               className="text-lg text-neutral-400"
             />
           </div>
@@ -46,22 +49,11 @@ const About = () => {
             />
 
             <div className="flex flex-wrap gap-3">
-              {[
-                "React",
-                "React Router",
-                "Tailwind CSS",
-                "JavaScript",
-                "TMDB API",
-                "Vite",
-              ].map((tech) => (
-                <span
-                  key={tech}
-                  className="rounded-full border border-neutral-700 px-4 py-2 text-sm"
-                >
-                  {tech}
-                </span>
-              ))}
+             {aboutPageTechnologies.map((item,index)=>{
+              return <Paragraph key={index} className="bg-neutral-900 border border-white/10  py-4 px-5 rounded-xl text-neutral-300 text-sm">{item}</Paragraph>
+             })}
             </div>
+            
           </div>
 
           {/* Disclaimer */}
@@ -72,8 +64,8 @@ const About = () => {
             />
 
             <Paragraph
-              text="This project uses The Movie Database (TMDB) API for movie information. CineFlix is an educational project and is not affiliated with or endorsed by TMDB."
-              className="mt-3 text-neutral-400"
+              text={aboutPageDisclaimer}
+              className="mt-3 text-neutral-400 "
             />
           </div>
         </div>
