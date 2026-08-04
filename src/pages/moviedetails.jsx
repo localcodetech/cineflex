@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import useMovieDetails from "@/hooks/usemoviedetail";
 
 import MovieHero from "@/section/moviedetail/moviehero";
@@ -7,10 +7,12 @@ import MovieCast from "@/section/moviedetail/moviecast";
 
 import { findTrailer } from "@/utils/moviehelpers";
 import Paragraph from "@/components/common/Paragraph";
+import { Button } from "@/components/ui/button";
 
 const MovieDetail = () => {
   const { id } = useParams();
   const detailsRef = useRef(null);
+  const navigate = useNavigate()
 
   const { movie, loading, error } = useMovieDetails(id);
 
@@ -53,6 +55,13 @@ const MovieDetail = () => {
 
         <MovieCast cast={cast} />
       </div>
+
+    <Button className={"py-5 px-8 text-sm hover:bg-accent "} onClickfunc={()=>{
+      return navigate(-1)
+    }}>
+      Back
+    </Button>
+
     </>
   );
 };
