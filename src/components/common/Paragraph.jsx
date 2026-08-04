@@ -1,7 +1,7 @@
 
 
 
-const Paragraph = ({text, className = ""}) =>{
+const Paragraph = ({text, className = "", children}) =>{
 
 
 
@@ -9,6 +9,7 @@ const Paragraph = ({text, className = ""}) =>{
         <p className={`mt-3  leading-relaxed text-neutral-400 ${className}`}>
 
 {text}
+{children}
         </p>
     )
 };
