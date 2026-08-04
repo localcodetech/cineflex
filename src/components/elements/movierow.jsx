@@ -54,7 +54,7 @@ const MovieRow = ({ title, fetchFunction }) => {
               <div key={movie.id} className="w-40 shrink-0">
                 <MovieCard
                   movie={movie}
-                  onCardClick={(selected) => navigate(`/movie/${selected.id}`)}
+                  onCardClick={(selected) => navigate(`/movies/${selected.id}`)}
                 />
               </div>
             ))}
