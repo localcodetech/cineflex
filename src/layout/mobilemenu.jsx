@@ -29,7 +29,7 @@ const MobileMenu = ({ query, setQuery, linkStyle }) => {
             className="mb-4 w-full rounded border border-neutral-700 bg-neutral-900 px-3 py-2 text-sm text-white placeholder:text-neutral-500 sm:hidden"
           /> */}
 
-          <ul className="flex flex-col gap-4  fixed  z-40 bg-black/40 backdrop-blur-sm right-0   w-40">
+          <ul className="flex flex-col gap-4  fixed  z-40 bg-black/40 backdrop-blur-sm right-0   w-20">
             {navigationLinks.map((item) => (
               <li key={item.link}>
                 <NavLink
