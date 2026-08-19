@@ -14,22 +14,16 @@ const MobileMenu = ({ query, setQuery, linkStyle }) => {
       <Button
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Toggle menu"
-        className="text-xl p-2 right-0 "
+        className="relative rounded-md transition-all active:scale-100 z-50 text-xl p-2 right-0 px-4 leading-8 "
       >
         {menuOpen ? <XIcon /> : <MenuIcon />}
       </Button>
 
       {menuOpen && (
-        <div className=" border-neutral-800 px-5 py-4 md:hidden">
-          {/* <input
-            type="text"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search..."
-            className="mb-4 w-full rounded border border-neutral-700 bg-neutral-900 px-3 py-2 text-sm text-white placeholder:text-neutral-500 sm:hidden"
-          /> */}
+        <div className="fixed top-0 right-0 h-dvh bg-black max-w-xs w-4/5 p-6 flex flex-col gap-8">
+          
 
-          <ul className="flex flex-col gap-4  fixed  z-40 bg-black/40 backdrop-blur-sm right-0   w-20">
+          <ul className="mt-16 flex flex-col gap-8">
             {navigationLinks.map((item) => (
               <li key={item.link}>
                 <NavLink
@@ -42,6 +36,18 @@ const MobileMenu = ({ query, setQuery, linkStyle }) => {
               </li>
             ))}
           </ul>
+        
+      <div className="mt-8 pt-6 border-t-2">
+          
+        <input
+            type="text"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="Search..."
+            className="mb-4 max-w-xs w-4/5 rounded border border-neutral-700 bg-neutral-900 px-3 py-2 text-sm text-white placeholder:text-neutral-500 sm:hidden"
+          />
+
+      </div>
         </div>
       )}
     </div>
