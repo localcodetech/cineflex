@@ -183,9 +183,6 @@ This project is created for learning and portfolio purposes.
 
 Frontend Developer | Mobile App Developer | Streaming Engineer
 
-GitHub: https://github.com/yourusername
-
-Portfolio: https://yourportfolio.com
 
 ---
 
