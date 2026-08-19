@@ -50,11 +50,13 @@ const NavBar = () => {
           </div>
 
           {/* Mobile Menu */}
-          <MobileMenu
+         <div className="relative">
+           <MobileMenu
             query={query}
             setQuery={setQuery}
             linkStyle={navLinkStyle}
           />
+         </div>
         </div>
       </Container>
     </header>
