@@ -163,7 +163,7 @@ export const getTVChannels = async () =>{
   }
 
   const data = await response.json()
-  console.log(data.tv)
+  
   return data.tv;
 };
 
