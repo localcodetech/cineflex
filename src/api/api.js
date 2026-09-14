@@ -3,6 +3,7 @@ const IMAGE_BASE_URL = "https://image.tmdb.org/t/p";
 
 const TOKEN = import.meta.env.VITE_TMDB_TOKEN;
 
+const urlTV = "https://localstreamexpressserver.onrender.com/api/channel"
 const fetchOptions = {
   headers: {
     Authorization: `Bearer ${TOKEN}`,
@@ -152,7 +153,7 @@ export const getBackdropUrl = (path) => {
 
 
 
-const urlTV = "https://localcodetech.pythonanywhere.com//api/channels";
+
 
 
 export const getTVChannels = async () =>{
@@ -163,7 +164,7 @@ export const getTVChannels = async () =>{
   }
 
   const data = await response.json()
-  console.log(data.tv)
-  return data.tv;
+  
+  return data;
 };
 
