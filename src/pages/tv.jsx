@@ -21,7 +21,7 @@ const TV = () => {
       <div className="grid gap-8 lg:grid-cols-3 lg:sticky">
         <div className="lg:col-span-2">
           <div className="lg:sticky lg:top-28">
-            <VideoPlayer url={selected ? selected.stream_url : null} />
+            <VideoPlayer url={selected ? selected.streamUrl : null} />
 
             {selected && (
               <div className="mt-4">

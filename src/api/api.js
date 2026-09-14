@@ -152,7 +152,7 @@ export const getBackdropUrl = (path) => {
 
 
 
-const urlTV = "https://localcodetech.pythonanywhere.com//api/channels";
+const urlTV = "https://localstreamexpressserver.onrender.com/api/channel";
 
 
 export const getTVChannels = async () =>{
@@ -164,6 +164,6 @@ export const getTVChannels = async () =>{
 
   const data = await response.json()
   
-  return data.tv;
+  return data;
 };
 

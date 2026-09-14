@@ -1,12 +1,12 @@
 
 import {useEffect, useState} from "react";
 
-import { getGenres } from "@/api/api"
+import { getGenres } from "@/api/api";
 
 
 
 const useGenres  = () => {
-    const [genres, setGenres] = useState([])
+    const [genres, setGenres] = useState([]);
 
 const loadGenres = async ()=>{
     try { const data = await getGenres();
@@ -16,13 +16,13 @@ const loadGenres = async ()=>{
 
 
 useEffect (()=>{
-loadGenres()
+loadGenres();
 
 }, [])
 
-return genres
+return genres;
 
 
 };
 
-export default useGenres
+export default useGenres;
